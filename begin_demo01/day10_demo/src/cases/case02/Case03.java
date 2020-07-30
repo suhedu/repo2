@@ -1,0 +1,27 @@
+package cases.case02;
+
+public class Case03 {
+    public static void main(String[] args) {
+        System.out.println(compare(100,120)); // 整数默认值int
+        System.out.println(compare((byte)100, (byte) 100)); //byte方法
+        System.out.println(compare((short)100, (short)100)); //short方法
+        System.out.println(compare(100L, 100L)); //long方法
+    }
+    // 需求：调用方法，传入两个整数，返回比较的结果是：ture/false
+    public static boolean compare(byte a , byte b){
+        System.out.println("--------byte--------");
+        return a == b;
+    }
+    public static boolean compare(short a , short b){
+        System.out.println("--------short--------");
+        return a == b ;
+    }
+    public static boolean compare(int a , int b){
+        System.out.println("--------int--------");
+        return a == b ;
+    }
+    public static boolean compare(long a , long b){
+        System.out.println("--------long--------");
+        return a == b ;
+    }
+}
